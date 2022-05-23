@@ -63,6 +63,7 @@ class Dev(Configuration):
       'crispy_forms',
       'crispy_bootstrap5',
       'debug_toolbar',
+      'blango_auth'
   ]
 
   MIDDLEWARE = [
@@ -79,7 +80,9 @@ class Dev(Configuration):
 
   ROOT_URLCONF = 'blango.urls'
 
-  INTERNAL_IPS = ["192.168.10.93"]
+  AUTH_USER_MODEL = "blango_auth.User"
+
+  INTERNAL_IPS = ["192.168.10.226"]
 
   TEMPLATES = [
       {
