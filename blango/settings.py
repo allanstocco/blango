@@ -58,7 +58,6 @@ class Dev(Configuration):
       'django.contrib.contenttypes',
       'django.contrib.sessions',
       'django.contrib.messages',
-      
       'django.contrib.staticfiles',
       'blog',
       'crispy_forms',
@@ -70,6 +69,7 @@ class Dev(Configuration):
       'allauth.account',
       'allauth.socialaccount',
       'allauth.socialaccount.providers.google',
+      'rest_framework'
   ]
 
   MIDDLEWARE = [
